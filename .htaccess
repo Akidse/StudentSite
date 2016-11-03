@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !css/ [NC]
+RewriteCond %{SCRIPT_FILENAME} !js/ [NC]
+RewriteCond %{SCRIPT_FILENAME} !img/ [NC]
+RewriteRule ^(.*)$ ./index.php?route=$1
