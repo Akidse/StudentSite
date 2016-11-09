@@ -1,5 +1,5 @@
 <?php
-include_once 'loader.php';
+include_once './loader.php';
 try
 {
 	$route = new Router('index');

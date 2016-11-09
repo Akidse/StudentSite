@@ -13,7 +13,7 @@ class Router
 
 	public function getPath()
 	{
-		return '/pages/'.$this->currentRoute.'.php';
+		return './pages/'.$this->currentRoute.'.php';
 	}
 
 	public function getTemplatePath()
